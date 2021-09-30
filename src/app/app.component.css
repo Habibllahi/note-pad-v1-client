@@ -1,0 +1,18 @@
+nav{
+    background-color: green;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav li:hover{
+    background-color:coral
+}
+nav li:active{
+    background-color: chocolate;
+}
+.active-link{
+    background-color: chocolate;
+}
+

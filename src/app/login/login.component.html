@@ -1,0 +1,19 @@
+<section class="mr-auto ml-auto w-50">
+    <form role="form" class="w-100 border border-primary" (submit)="auth()">
+        <fieldset name="login">
+            <legend>Login</legend>
+            <label for="clientusername">username Email</label>
+            <input type="email" name="username" id="clientusername" class="w-100" [(ngModel)]="credentails.username" autocomplete="off">
+    
+            <label for="clientpassword">password</label>
+            <input type="password" name="password" id="clientpassword" class="w-100" [(ngModel)]="credentails.password" autocomplete="off">
+    
+            <label for="remember" class="mr-1">Remember me</label>
+            <input type="checkbox" name="Remember me" id="remember" autocomplete="off" [(ngModel)]="credentails.remember">
+            <input type="submit" value="Submit" class="d-block" autocomplete="off">
+        </fieldset>
+    </form>
+    <div>
+        <a RouterLink="/register" class="d-inline">Register as a new user?</a>
+    </div>
+</section>
